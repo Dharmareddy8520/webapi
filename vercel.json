@@ -1,6 +1,5 @@
 {
     "name": "my-backend-project",
-    "alias": "my-backend-project.com",
     "builds": [
       {
         "src": "./index.js",
