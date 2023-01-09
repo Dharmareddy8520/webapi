@@ -1,14 +1,31 @@
 {
-    "version": 2,
+    "name": "my-backend-project",
+    "alias": "my-backend-project.com",
     "builds": [
-        {
-            "src": "./index.js"
-        }
+      {
+        "src": "./index.js",
+        "use": "@now/node"
+      }
     ],
+    "version": 2,
     "routes": [
         {
             "src": "/(.*)",
             "dest": "/"
         }
-    ]
+    ],
+    "env": {
+        "NODE_ENV": "production",
+      },
+    "headers": [
+        {
+          "src": "/api/*",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ]
+        }
+      ]
 }
