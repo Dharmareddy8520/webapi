@@ -16,16 +16,5 @@
     ],
     "env": {
         "NODE_ENV": "production"
-      },
-    "headers": [
-        {
-          "src": "/api/*",
-          "headers": [
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "*"
-            }
-          ]
-        }
-      ]
+      }
 }
